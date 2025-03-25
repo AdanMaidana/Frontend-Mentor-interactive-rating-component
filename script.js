@@ -16,6 +16,11 @@ buttons.forEach((button, index) => {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
+  if (userRating === 0) {
+    alert('Please select a rating');
+    return;
+  }
+
   form.style.display = 'none';
 
   const thankYouState = document.createElement('div');
