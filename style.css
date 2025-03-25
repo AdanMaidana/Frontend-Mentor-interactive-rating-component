@@ -1,0 +1,217 @@
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body, html {
+  background-color: hsl(216, 12%, 8%);
+  min-width: 375px;
+  min-height: 100dvh;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  place-content: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+p {
+  font-size: 15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.card {
+  margin: 0 auto;
+  background: linear-gradient(to bottom, hsl(215,20%,16%), hsl(215,26%,12%));
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 375px;
+  max-height: 345px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+form img {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsl(213, 19%, 19%);
+  border-radius: 50%;
+  padding: .75rem;
+}
+
+form h1 {
+  font-size: 1.5rem;
+}
+
+form p {
+  font-size: .85rem;
+  line-height: 1.5;
+  color: hsl(217, 12%, 63%);
+}
+
+form ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+form ul li button {
+  border: 0;
+  border-radius: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: hsl(217, 12%, 63%);
+  font-weight: 700;
+  background-color: hsl(213,19%,20%);
+  transition: background-color .3s, color .3s;
+  cursor: pointer;
+}
+
+form ul li button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+
+form ul li button.active {
+  background-color: #fff;
+  color: hsl(216, 12%, 8%);
+}
+
+form button[type='submit'] {
+  border: 0;
+  padding: .85rem 0;
+  border-radius: 999px;
+  background-color: hsl(25, 97%, 53%);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: .9rem;
+  color: hsl(216, 12%, 8%);
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+form button[type='submit']:hover {
+  background-color: #fff;
+}
+
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  img {
+    margin: 0 auto;
+    max-width: 9rem;
+  }
+
+  p:first-of-type {
+    margin: .5rem auto;
+    color: hsl(25, 97%, 40%);
+    background-color: hsl(213,19%,19%);
+    width: fit-content;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    font-size: .85rem;
+  }
+
+  h1 {
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: 400;
+  }
+  
+  p:last-of-type {
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+    font-size: .9rem;
+  }
+}
+
+footer {
+  margin: 0 auto;
+  width: fit-content;
+  padding-top: 2rem;
+
+  p {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: hsl(217, 12%, 63%);
+    transition: color .3s;
+  }
+  
+  a:hover {
+    color: hsl(217, 12%, 43%);
+  }
+}
+@media (width >= 640px) {
+
+  .card {
+    max-width: 410px;
+    max-height: 400px;
+  }
+
+  form img {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  form h1 {
+    font-size: 1.85rem;
+  }
+
+  form p {
+    font-size: 1rem;
+  }
+
+  form ul {
+    padding-block: .5rem;
+  }
+
+  form ul li button {
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1rem;
+  }
+
+  .thank-you {
+    padding: 1rem 0;
+
+    img {
+      max-width: 12rem;
+    }
+
+    p:first-of-type {
+      font-size: .95rem;
+      padding: .5rem 1rem;
+      margin: 1rem auto;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+    }
+
+    p:last-of-type {
+      font-size: .95rem;
+    }
+  }
+}
